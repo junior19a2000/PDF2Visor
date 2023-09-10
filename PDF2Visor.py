@@ -21,8 +21,8 @@ hide_streamlit_style = """
             """
 st.markdown(hide_streamlit_style, unsafe_allow_html=True)
 
-# tokn = st.secrets["token"]
-g    = Github('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')
+tokn = st.secrets["token"]
+g    = Github(tokn)
 rep1 = g.get_repo('junior19a2000/PDFs')
 rep2 = g.get_repo('junior19a2000/Visor')
 
